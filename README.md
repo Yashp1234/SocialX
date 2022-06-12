@@ -2,8 +2,11 @@
 This is a internship task app.
 
 * App consists of Register and Login page via which user can signup and login.
+
 * User can create an using Name,Email,Mobile no and password And then sign in.
+
 * Alternatively, user can sign in using their google account or facebook account (Option is provided in LogIn Screen).
+
 * After Login, user can sea the top news present in main screen and can log out by pressing back button and confirm.
 
 ## Libraries/Frameworks used
