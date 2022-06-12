@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idRVItem"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10sp">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/idPublishedAt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:layout_height="match_parent"
+                    android:text="2 hours ago"/>
+
+                <TextView
+                    android:id="@+id/idSource"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_height="match_parent"
+                    android:text="BBC news"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/idTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:text="Title"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_text"/>
+
+            <TextView
+                android:id="@+id/idDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="2dp"
+                android:text="Details"
+                android:textColor="@color/blue_text"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_not_available"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

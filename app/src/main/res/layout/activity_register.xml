@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_corners">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/socialx"
+            android:textSize="30sp"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/bottom_corners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idLogInBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_round"
+                android:text="login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/idSignUpBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bottom_right_corner"
+                android:text="Sign up" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/text_red"
+                android:text="@string/create_an_account"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idName"
+                android:inputType="textPersonName"
+                android:drawableEnd="@drawable/ic_person"
+                android:drawableTint="@color/dark_red"
+                android:hint=" John doe"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Email"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEmail"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawableTint="@color/dark_red"
+                android:hint=" johndoe@gmail.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Contact no"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idContactNo"
+                android:inputType="number"
+                android:drawableTint="@color/dark_red"
+                android:drawableEnd="@drawable/ic_phone"
+                android:hint=" 9876543210"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Password"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idPassword"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_lock"
+                android:drawableTint="@color/dark_red"
+                android:hint=" ********"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/dark_red"
+                android:text="@string/i_agree_with_term_amp_condition"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/idAlreadyHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:paddingLeft="35dp"
+                android:paddingBottom="30dp"
+                android:text="@string/already_have_an_account_sign_in"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/idRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/register"
+        android:background="@drawable/upper_corners_button"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SocialX</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="create_an_account">Create an \n Account</string>
+    <string name="already_have_an_account_sign_in">Already have an account? <font color ="#FB0100">Sign In!</font> </string>
+    <string name="i_agree_with_term_amp_condition">I agree with <font color ="#FB0100"><u><b>term &amp; condition</b></u></font> </string>
+    <string name="sign_in_to_your_account">Sign in to your \n Account</string>
+    <string name="don_t_have_an_account_register_now">Don\'t have an Account ? <font color="#FB0100">Register Now</font></string>
+    <string name="socialx">Social<font size="40">X</font></string>
+    <string name="login">login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="register">register</string>
+
+
+    <string name="facebook_app_id">1446807079074686</string>
+    <string name="fb_login_protocol_scheme">fb1446807079074686</string>
+    <string name="facebook_client_token">49cac5dd538ba1aa6f1b020c3d0879cb</string>
+</resources>

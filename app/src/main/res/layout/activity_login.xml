@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_corners">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/socialx"
+            android:textSize="30sp"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/bottom_corners"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idLogInBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_round"
+                android:text="login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/idSignUpBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bottom_right_corner"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/text_red"
+                android:text="@string/sign_in_to_your_account"
+                android:gravity="left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Email"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEmail"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawableTint="@color/dark_red"
+                android:hint=" johndoe@gmail.com"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Password"
+                android:gravity="left"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idPassword"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_lock"
+                android:drawableTint="@color/dark_red"
+                android:hint=" ********"/>
+
+
+            <TextView
+                android:id="@+id/idForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textColor="@color/text_red"
+                android:text="Forgot Password ?"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Login With"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/google"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_google"/>
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_facebook"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/idDontHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/don_t_have_an_account_register_now"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/idLogInBottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/login"
+        android:background="@drawable/upper_corners_button"/>
+</LinearLayout>
