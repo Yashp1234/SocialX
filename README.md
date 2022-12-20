@@ -1,5 +1,4 @@
 # SocialX
-This is a internship task app.
 
 * App consists of Register and Login page via which user can signup and login.
 
